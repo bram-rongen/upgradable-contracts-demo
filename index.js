@@ -28,7 +28,6 @@ async function main() {
     initArgs: [42],
   });
 
-  console.log(project);
   console.log("Creating the second upgradeable instance of Box...");
   let secondBoxProxy = await project.createProxy(boxContract, {
     initArgs: [42],
